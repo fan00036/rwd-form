@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Responsive Travel Form</title>
+	
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	
 	<link rel="stylesheet" href="css/form.css" />
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	
+
+	<script src="js/main.js"></script>
+	
 </head>
 <body>
 	<div class="wrapper">
@@ -11,32 +21,36 @@
 			<h1>Hotel-O-City daf</h1>
 		</header>
 		<section class="main">
-			<h2>A Heading That You Can Change</h2>
-			<p>Some information about the form, the page, and/or the site.</p>
+			<h2>Start your wonderful trip here!</h2>
+			<p>Please fill out the following information for sereaching the most comfortable hotel for you.  </p>
 			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
 				
 				<div class="formBox">
-					<label for="departure"></label>
-					<input type="text" name="departure" id="departure" placeholder="departure city" />
+					<label for="departure">Destination City</label>
+					<img src="/png/home-3x.png">
+					<input type="text" name="departure" id="departure" placeholder="departure city" autocomplete="on" required/>
 				</div>
 				<div class="formBox">
-					<label for="destination"></label>
-					<input type="text" name="destination" id="destination" placeholder="destination city" />
+					<label for="destination">Departure City</label>
+					<img src="/png/home-3x.png">
+					<input type="text" name="destination" id="destination" placeholder="destination city" autocomplete="on" required/>
 				</div>
 				
 				<div class="formBox">
-					<label for="departure_dt"></label>
-					<input type="date" name="departure_dt" id="departure_dt" placeholder="" />
+					<label for="departure_dt">Date of Departure</label>
+					<img src="/png/spreadsheet-3x.png">
+					<input type="date" name="departure_dt" id="departure_dt" placeholder="" required/>
 				</div>
 				<div class="formBox">
-					<label for="return_dt"></label>
-					<input type="date" name="return_dt" id="return_dt" placeholder="" />
+					<label for="return_dt">Date of Return</label>
+					<img src="/png/spreadsheet-3x.png">
+					<input type="date" name="return_dt" id="return_dt" placeholder="" required/>
 				</div>
 				
 				<div class="col">
-					<label for="num_adults"></label>
-					<input type="number" name="num_adults" id="num_adults" min="1" max="10" step="1" />
-					<!-- OR 
+					<label for="num_adults">Number of Adults</label>
+					<img src="/png/people-3x.png">
+					
 					<select name="num_adults" id="num_adults">
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -49,11 +63,13 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 					</select>
-					-->
+				
 				</div>
 				<div class="col">
-					<label for="price" title=""Max. price per person>Max. Price</label>
-					<input type="range" name="price" id="price" min="100" max="2000" value="1000"/>
+					<label for="price">Maximum price:</label>
+					<img src="/png/dollar-3x.png">
+  <input type="text" id="price" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					<div id="slider"></div>
 				</div>
 				
 				<div class="col buttons">
