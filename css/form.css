@@ -289,23 +289,24 @@ html[xmlns] .clearfix {
 
 @media screen and (min-width: 781px){
 	img{
-	width: 18px;
-    height: 18px;
+	width: 20px;
+    height: 20px;
+	padding: 3px 3px 3px 7px;
+	float:left;
  
 }
 		label{
 	text-align:right;
 	float:left;
-	
-	margin: 0 1rem 0 0 ;
-	font-size: 1.2rem;
-	padding:0.6rem 0;
+	font-size: 100%;
+	padding:0.3rem 0;
 	color: #666;
 		}
 	
 	.formBox {	
 		float:left;
 		width: 50%;
+		margin-bottom: 2%;
 
 		
 }
@@ -313,6 +314,7 @@ html[xmlns] .clearfix {
 	}
 	form{
 		max-width: 80%;
+		margin: 0 auto;
 	}
 	
 	input[type=text],
@@ -325,7 +327,11 @@ html[xmlns] .clearfix {
 
 		text-align: left;
 
-		font-size: 1rem;
+		font-size: 1.1rem;
+		
+		width:44%;
+		
+		float:left;
 	
 		color: #333;
 
