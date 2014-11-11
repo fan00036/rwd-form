@@ -217,8 +217,8 @@ html[xmlns] .clearfix {
 
 @media screen and (max-width: 780px) and (min-width: 501px) {
 	label{
-	width: 35%;
-	text-align:right;
+	width: 42%;
+	text-align:left;
 	float:left;
 	margin: 0 1rem 0 0 ;
 	font-size: 1.2rem;
@@ -307,10 +307,12 @@ html[xmlns] .clearfix {
 		float:left;
 		width: 50%;
 		margin-bottom: 2%;
+		
 
 		
 }
 	.form-row{
+		
 	}
 	form{
 		max-width: 80%;
