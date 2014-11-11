@@ -22,34 +22,43 @@
 		</header>
 		<section class="main">
 			<h2>Start your wonderful trip here!</h2>
-			<p>Please fill out the following information for sereaching the most comfortable hotel for you.  </p>
+			<p class="p1">Please fill out the following information for sereaching the most comfortable hotel for you.  </p>
 			<form name="travelForm" id="travelForm" action="#" method="post" enctype="application/x-www-form-urlencoded">
 				
 				<div class="formBox">
-					<label for="departure">Destination City</label>
-					<img src="/png/home-3x.png">
+					<label for="departure">Departure City</label>
+					<div class="form-row clearfix">
+					<img src="/png/home-4x.png">
 					<input type="text" name="departure" id="departure" placeholder="departure city" autocomplete="on" required/>
+					</div>
 				</div>
 				<div class="formBox">
-					<label for="destination">Departure City</label>
-					<img src="/png/home-3x.png">
+					<label for="destination">Destination City</label>
+					<div class="form-row clearfix">
+					<img src="/png/home-4x.png">
 					<input type="text" name="destination" id="destination" placeholder="destination city" autocomplete="on" required/>
+						</div>
 				</div>
 				
 				<div class="formBox">
 					<label for="departure_dt">Date of Departure</label>
-					<img src="/png/spreadsheet-3x.png">
+					<div class="form-row clearfix">
+					<img src="/png/spreadsheet-4x.png">
 					<input type="date" name="departure_dt" id="departure_dt" placeholder="" required/>
+						</div>
 				</div>
 				<div class="formBox">
 					<label for="return_dt">Date of Return</label>
-					<img src="/png/spreadsheet-3x.png">
+					<div class="form-row clearfix">
+					<img src="/png/spreadsheet-4x.png">
 					<input type="date" name="return_dt" id="return_dt" placeholder="" required/>
+						</div>
 				</div>
 				
 				<div class="col">
 					<label for="num_adults">Number of Adults</label>
-					<img src="/png/people-3x.png">
+					<div class="form-row clearfix">
+					<img src="/png/people-4x.png">
 					
 					<select name="num_adults" id="num_adults">
 						<option value="1">1</option>
@@ -63,13 +72,16 @@
 						<option value="9">9</option>
 						<option value="10">10</option>
 					</select>
+						</div>
 				
 				</div>
-				<div class="col">
+				<div class="formBox">
 					<label for="price">Maximum price:</label>
-					<img src="/png/dollar-3x.png">
+					<div class="form-row clearfix">
+					<img src="/png/dollar-4x.png">
   <input type="text" id="price" readonly style="border:0; color:#f6931f; font-weight:bold;">
 					<div id="slider"></div>
+						</div>
 				</div>
 				
 				<div class="col buttons">
