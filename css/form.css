@@ -231,6 +231,9 @@ img {
 		width: 80%;
 
 	}
+		#num_adults{
+		width: 80%;
+	}
 
 	input[type=submit],
 
@@ -322,6 +325,9 @@ img {
 
 		width: 40%;
 
+	}
+		#num_adults{
+		width: 40%;
 	}
 
 	#slider {
@@ -478,6 +484,9 @@ img {
 
 		padding-bottom: 80px;
 
+	}
+	#num_adults{
+		width: 44%;
 	}
 
 }
